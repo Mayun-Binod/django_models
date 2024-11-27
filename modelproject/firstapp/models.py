@@ -6,3 +6,6 @@ class Employee(models.Model):
     ename=models.CharField(max_length=100)
     esal=models.FloatField()
     eaddr=models.CharField(max_length=40)
+
+    def __str__(self):
+        return(f"{self.eno}")
